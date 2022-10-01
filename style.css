@@ -57,11 +57,12 @@ body {
   border-radius: 50%;
   display: block;
   margin: -105px auto;
-  transform: scale(1.2);
-}
-.card-profile img:hover {
   transition-duration: 0.4;
   transition-property: transform;
+}
+.card-profile img:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 
 .card-profile .name p {
