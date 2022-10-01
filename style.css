@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400;700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+
+  background-image: linear-gradient(to left, #bdbbbe 0%, #9d9ea3 100%),
+    radial-gradient(
+      88% 271%,
+      rgba(255, 255, 255, 0.25) 0%,
+      rgba(254, 254, 254, 0.25) 1%,
+      rgba(0, 0, 0, 0.25) 100%
+    ),
+    radial-gradient(
+      50% 100%,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    );
+  background-blend-mode: normal, lighten, soft-light;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+.card {
+  width: 330px;
+  height: 460px;
+
+  background-color: #fff;
+  position: relative;
+  border-radius: 24px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+.card-content {
+  text-align: justify;
+  padding: 10px 30px 10px;
+}
+.card-header {
+  width: 100%;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+
+  height: 105px;
+  margin-bottom: 50px;
+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+}
+
+.card-profile {
+}
+.card-profile img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: block;
+  margin: -105px auto;
+}
+.card-profile img:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.card-profile .name p {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: white;
+  font-weight: 700;
+}
+
+.card-content p {
+  padding: 10px 10px;
+  font-size: 0.8em;
+  margin-bottom: 20px;
+  font-weight: 700;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  line-height: 1.5;
+}
+
+.card-social {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  width: 230px;
+  margin: auto;
+}
+.card-social i {
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
+.card-social i:hover {
+  transform: scale(1.3);
+  color: red;
+  transition: 0.3s;
+}
